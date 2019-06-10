@@ -27,3 +27,17 @@ yarn run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+
+### To Build and Deploy Docker container
+Install docker
+build docker image by running 
+```
+docker build -t vue-userlist/dockerize-vuejs-app .
+```
+Run docker container
+```
+docker run -it -p 8080:8080 --rm --name dockerize-vuejs-app-1 vue-userlist/dockerize-vuejs-app
+```
+visit http://localhost:8080/
